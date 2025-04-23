@@ -69,7 +69,8 @@ uploaded_file = st.file_uploader("📂 Upload your Titanic CSV file", type=["csv
 def load_and_prep_data(file):
     df = pd.read_csv(file)
     df_processed = df.copy() # Work on a copy
-
+    
+   
     # --- Initial Data Preparation ---
     # (Fill Age, Fare, Embarked; Create FamilySize; Map Sex/Survived etc.)
     if 'Age' in df_processed.columns:
@@ -80,6 +81,8 @@ def load_and_prep_data(file):
         median_fare = df_processed['Fare'].median()
         df_processed['Fare'].fillna(median_fare, inplace=True)
         df_processed['Fare'] = pd.to_numeric(df_processed['Fare'], errors='coerce') # Ensure numeric
+        df_processed = df_processed[df_processed['Fare'] >= 1]
+
     if 'Embarked' in df_processed.columns:
         # Fill with mode only if missing values exist
         if df_processed['Embarked'].isnull().any():
