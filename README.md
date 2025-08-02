@@ -1,6 +1,10 @@
 # 🚢 Titanic Data Explorer Dashboard
 
 An interactive and comprehensive Streamlit dashboard for exploring the famous Titanic dataset. This application provides multiple visualization perspectives using Plotly, Seaborn, Matplotlib, and Altair to uncover insights about passenger survival patterns.
+
+Link :https://gfe0007group10.streamlit.app/
+
+
 ## Demo
 
 
