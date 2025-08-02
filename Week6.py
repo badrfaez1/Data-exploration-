@@ -1,5 +1,3 @@
-# Save this code as a Python file (e.g., titanic_dashboard.py)
-# Run it from your terminal using: streamlit run titanic_dashboard.py
 
 import streamlit as st
 import pandas as pd
@@ -782,3 +780,4 @@ else:
     # st.image("https://raw.githubusercontent.com/streamlit/streamlit/develop/examples/data/titanic.jpg", caption="Example Titanic Dataset Visualization", use_column_width=True)
     # Using a more reliable placeholder or remove if no image is available
     # st.markdown("*(Image preview of the dashboard goes here)*")
+
